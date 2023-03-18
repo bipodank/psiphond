@@ -44,7 +44,6 @@ echo -e "$ipvps" > $file_ip
         ./psiphond --ipaddress 0.0.0.0 --protocol FRONTED-MEEK-HTTP-OSSH:80 --protocol FRONTED-MEEK-OSSH:443 generate
         apt install screen -y
 }
-binario_script
 
 ## INSTALACION
 instalar_psi(){
@@ -84,6 +83,12 @@ instalar_psi(){
     echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     exit 1
     fi
+    ## FUNCIONES 
+    
+   
     echo ""
     echo -ne "\033[1;31mENTER \033[1;33mpara regresar al \033[1;32mMENU!\033[0m" && read enter && clear
 }
+    clear
+    binario_script
+    instalar_psi
