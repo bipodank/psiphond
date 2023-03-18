@@ -59,7 +59,8 @@ instalar_psi(){
             echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
             echo -e "${verde34}SI LA PANTALLA SE CONGELA PRESION crtl + a + d \033[0m"
                 # INICIA ACA EL SERVICIO
-                screen -dmS psi ./psiphond run
+		screen
+                ./psiphond run
 
                 if [[ "$(ps x | grep 'psiphond' | grep -v 'grep'|wc -l)" != '0' ]]; then
 				   echo -e "${azulRB}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
